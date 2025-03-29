@@ -9,6 +9,10 @@ frontend:
   phases:
     preBuild:
       commands:
+        - node --version
+        - npm --version
+        - npm install @angular/cli
+        - which ng
         - npx ng version
     build:
       commands:
