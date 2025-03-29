@@ -12,6 +12,7 @@ frontend:
         - npx ng version
     build:
       commands:
+        - npm i --legacy-peer-deps
         - npx ng build --configuration=production
   artifacts:
     baseDirectory: dist/amplify-angular-template/browser
