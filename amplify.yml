@@ -11,7 +11,7 @@ frontend:
       commands:
         - node --version
         - npm --version
-        - npm install @angular/cli
+        - npm install -g @angular/cli
         - which ng
         - npx ng version
     build:
