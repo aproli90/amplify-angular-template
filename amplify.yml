@@ -11,13 +11,13 @@ frontend:
       commands:
         - node --version
         - npm --version
-        - npm install -g @angular/cli
-        - which ng
-        - npx ng version
+        # - npm install -g @angular/cli
+        # - which ng
+        # - npx ng version
     build:
       commands:
         - npm i --legacy-peer-deps
-        - npx ng build --configuration=production
+        - npm run build:prod
   artifacts:
     baseDirectory: dist/amplify-angular-template/browser
     files:
